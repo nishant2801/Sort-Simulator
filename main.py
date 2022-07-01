@@ -37,7 +37,7 @@ class drawoutput:
 
 def draw(draw_bar,color_positions={}):
     draw_bar.window.fill(draw_bar.background)
-    ctrls=draw_bar.fontt.render("R-reset | S-selection sort",1,draw_bar.black)
+    ctrls=draw_bar.fontt.render("Press: R-reset | S-selection sort",1,draw_bar.black)
     draw_bar.window.blit(ctrls,((draw_bar.width/2)-(ctrls.get_width()/2),8))
     sort_ing=draw_bar.fontt.render("I-insertion sort | B-bubble sort",1,draw_bar.black)
     draw_bar.window.blit(sort_ing,((draw_bar.width/2)-(sort_ing.get_width()/2),32))
